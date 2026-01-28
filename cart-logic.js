@@ -6,7 +6,7 @@ window.getCurrentLang = () => {
     return 'es'; 
 };
 
-var EVENTS_JSON_URL = "https://gist.githubusercontent.com/Lauchis/50b5ece416be0f17df01c554fd70871f/raw/e6eec0576f21f13eaa79669710602a4b6488e795/eventos.json";
+var EVENTS_JSON_URL = "https://gist.githubusercontent.com/Lauchis/50b5ece416be0f17df01c554fd70871f/raw/5dbf7d6f5ba41c034d4ba340da4bbebd569c77a7/eventos.json";
 window.ALL_COUNTRIES = ["Alemania", "Argentina", "Bolivia", "Brasil", "Chile", "Colombia", "Costa Rica", "Ecuador", "El Salvador", "España", "Estados Unidos", "Francia", "Guatemala", "Honduras", "Italia", "México", "Nicaragua", "Otros", "Panamá", "Paraguay", "Perú", "Portugal", "Puerto Rico", "Reino Unido", "República Dominicana", "Uruguay", "Venezuela"].sort();
 
 var ENDPOINTS = {
