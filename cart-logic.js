@@ -169,7 +169,7 @@ window.startApp = async () => {
                 var ccInput = document.createElement("input");
                 ccInput.type = "hidden";
                 ccInput.name = "_cc";
-                ccInput.value = "juan.lopez@cmspeople.com,szubillaga@cmspeople.com";
+                ccInput.value = "juan.lopez@cmspeople.com,szubillaga@cmspeople.com,lsacripanti@cmspeople.com";
                 D.form.appendChild(ccInput);
             }
             // --- FIN DE LA AGREGACIÓN ---
