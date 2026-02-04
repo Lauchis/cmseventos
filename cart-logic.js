@@ -161,7 +161,19 @@ window.startApp = async () => {
             document.addEventListener("click", e => {
                 if (window.isCartOpen && D.cart && !D.cart.contains(e.target) && !D.openBtn.contains(e.target)) window.toggleCart(false);
             });
+
             popSel();
+
+            // --- INICIO DE LA AGREGRACIÓN DE COPIAS (CC) ---
+            if (D.form && !D.form.querySelector('input[name="_cc"]')) {
+                var ccInput = document.createElement("input");
+                ccInput.type = "hidden";
+                ccInput.name = "_cc";
+                ccInput.value = "juan.lopez@cmspeople.com,szubillaga@cmspeople.com";
+                D.form.appendChild(ccInput);
+            }
+            // --- FIN DE LA AGREGACIÓN ---
+
             window.updateCartState();
         } else { setTimeout(ck, 300) }
     };
