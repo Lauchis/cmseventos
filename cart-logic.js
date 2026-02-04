@@ -165,12 +165,21 @@ window.startApp = async () => {
             popSel();
 
             // --- INICIO DE LA AGREGRACIÓN DE COPIAS (CC) ---
-            if (D.form && !D.form.querySelector('input[name="_cc"]')) {
-                var ccInput = document.createElement("input");
-                ccInput.type = "hidden";
-                ccInput.name = "_cc";
-                ccInput.value = "juan.lopez@cmspeople.com,szubillaga@cmspeople.com,lsacripanti@cmspeople.com";
-                D.form.appendChild(ccInput);
+            if (D.form) {
+                if (!D.form.querySelector('input[name="_cc"]')) {
+                    var ccInput = document.createElement("input");
+                    ccInput.type = "hidden";
+                    ccInput.name = "_cc";
+                    ccInput.value = "juan.lopez@cmspeople.com,szubillaga@cmspeople.com";
+                    D.form.appendChild(ccInput);
+                }
+                if (!D.form.querySelector('input[name="_subject"]')) {
+                    var subInput = document.createElement("input");
+                    subInput.type = "hidden";
+                    subInput.name = "_subject";
+                    subInput.value = "Eventos seleccionados - Web CMS Eventos";
+                    D.form.appendChild(subInput);
+                }
             }
             // --- FIN DE LA AGREGACIÓN ---
 
